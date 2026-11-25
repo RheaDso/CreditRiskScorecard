@@ -33,8 +33,8 @@ split. The seed was **not** changed to pick a better-looking result. Possible im
 bins, fewer variables, or cross-validation instead of a single split.
 
 ## Not verified
-- The Docker image was not built on the development machine (Docker is not installed). The CI
-  workflow builds and calls it.
+- Docker is not installed on the development machine. The CI workflow builds the image from a smoke
+  run and checks that `/health` answers; `/score` is tested outside the container.
 - `make` is not installed on the development machine, so the Makefile targets were not run there.
 
 ## Leakage review: EXT_SOURCE_MEAN (IV 0.54)

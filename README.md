@@ -132,4 +132,4 @@ All deviations from the build spec are listed in [DECISIONS.md](DECISIONS.md).
 - No reject inference: only accepted applicants have outcomes.
 - No fairness review. Age and gender need legal and ethical review before any real use.
 - The API has no authentication or rate limiting; do not expose it publicly as is.
-- Docker image is built only in CI.
+- The Docker image is built and health-checked in CI only, using a smoke-run model.
