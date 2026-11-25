@@ -1,0 +1,15 @@
+variable,comparison,psi,flag
+score,train vs test,0.0008960711731165581,stable
+score,train vs application_test,0.0004525721342413513,stable
+EXT_SOURCE_2,train vs application_test,0.0005413270226520422,stable
+EXT_SOURCE_3,train vs application_test,0.0005357382783163988,stable
+INST_LATE_PAYMENT_RATE,train vs application_test,0.00031024723233179143,stable
+AGE_YEARS,train vs application_test,0.0005977662865254115,stable
+EXT_SOURCE_1,train vs application_test,0.0003996944493327068,stable
+BUR_DEBT_CREDIT_RATIO,train vs application_test,0.00026034485786814927,stable
+CREDIT_INCOME_RATIO,train vs application_test,6.436540378343545e-05,stable
+EMPLOYED_YEARS,train vs application_test,0.00025412770573884864,stable
+NAME_EDUCATION_TYPE,train vs application_test,7.273592319944166e-05,stable
+INST_PAYMENT_RATIO_MEAN,train vs application_test,0.000306980577297721,stable
+GOODS_CREDIT_RATIO,train vs application_test,0.0003612485099176506,stable
+PREV_APPROVED_RATE,train vs application_test,0.00044952111910653196,stable

@@ -1,0 +1,26 @@
+EXT_SOURCE_MEAN: Low average external credit score
+EXT_SOURCE_MIN: One external credit score is low
+EXT_SOURCE_MAX: Best external credit score is low
+EXT_SOURCE_STD: External credit scores disagree widely
+EXT_SOURCE_1: Low external credit score (source 1)
+EXT_SOURCE_2: Low external credit score (source 2)
+EXT_SOURCE_3: Low external credit score (source 3)
+AGE_YEARS: Applicant age profile carries higher risk
+EMPLOYED_YEARS: Short employment history
+EMPLOYED_TO_AGE: Short employment history relative to age
+CREDIT_INCOME_RATIO: Loan amount is high relative to income
+ANNUITY_INCOME_RATIO: Repayments are high relative to income
+CREDIT_TERM: Loan repayment structure carries higher risk
+GOODS_CREDIT_RATIO: Loan amount is high relative to the price of the goods
+BUR_DEBT_CREDIT_RATIO: High existing debt relative to credit limits
+BUR_COUNT: Number of past bureau credits
+BUR_ACTIVE_COUNT: Many active credits elsewhere
+BUR_OVERDUE_SUM: Overdue amounts reported by the bureau
+BUR_DAYS_CREDIT_MEAN: Short credit history
+INST_LATE_PAYMENT_RATE: History of late instalment payments
+INST_DPD_MEAN: Instalments are typically paid late
+INST_UNDERPAY_RATE: History of paying less than the instalment due
+PREV_REFUSED_COUNT: Previous applications were refused
+PREV_APPROVED_RATE: Low approval rate on previous applications
+NAME_EDUCATION_TYPE: Education profile carries higher risk
+CODE_GENDER: Demographic profile carries higher risk

@@ -1,0 +1,44 @@
+seed: 42
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  artifacts: artifacts
+  reports: reports
+split: {train: 0.60, validation: 0.20, test: 0.20, pot_share_of_test: 0.30}
+features:
+  drop_missing_above: 0.95
+  rare_category_share: 0.01
+binning:
+  fine_bins: 20
+  max_n_bins: 8
+  min_bin_share: 0.05
+  monotonic_trend: auto_asc_desc
+  overrides_file: config/bin_overrides.yaml
+selection:
+  min_iv: 0.02
+  suspicious_iv: 0.50
+  max_corr: 0.70
+  max_vif: 5.0
+  stepwise_min_gini_gain: 0.002
+  min_vars: 8
+  max_vars: 20
+  max_pvalue: 0.05
+scaling: {base_score: 600, base_odds: 50, pdo: 20}
+validation:
+  psi_bins: 10
+  psi_warn: 0.10
+  psi_alert: 0.25
+  max_gini_gap: 0.03
+  targets: {gini: 0.45, ks: 0.30}
+challenger:
+  n_trials: 30
+  shap_background: 2000
+  champion_uplift_threshold: 0.05
+strategy:
+  cutoff_step: 5
+  target_bad_rate: 0.05
+  refer_band: 10
+  n_risk_bands: 5
+api: {max_batch: 1000, model_version: "1.0.0"}
+synthetic: {n_applicants: 100000}

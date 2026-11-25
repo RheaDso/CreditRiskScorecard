@@ -1,0 +1,49 @@
+name,source_table,formula,business_meaning
+CODE_GENDER,application,raw column,code gender
+AMT_INCOME_TOTAL,application,raw column,amt income total
+AMT_CREDIT,application,raw column,amt credit
+AMT_ANNUITY,application,raw column,amt annuity
+AMT_GOODS_PRICE,application,raw column,amt goods price
+CNT_FAM_MEMBERS,application,raw column,cnt fam members
+NAME_EDUCATION_TYPE,application,raw column,name education type
+FLAG_DOCUMENT_2,application,raw column,flag document 2
+FLAG_DOCUMENT_3,application,raw column,flag document 3
+EXT_SOURCE_1,application,raw column,ext source 1
+EXT_SOURCE_2,application,raw column,ext source 2
+EXT_SOURCE_3,application,raw column,ext source 3
+FLAG_DAYS_EMPLOYED_ANOM,application,from DAYS_EMPLOYED,flag days employed anom
+CREDIT_INCOME_RATIO,application,"from AMT_CREDIT, AMT_INCOME_TOTAL",credit income ratio
+ANNUITY_INCOME_RATIO,application,"from AMT_ANNUITY, AMT_INCOME_TOTAL",annuity income ratio
+CREDIT_TERM,application,"from AMT_ANNUITY, AMT_CREDIT",credit term
+GOODS_CREDIT_RATIO,application,"from AMT_GOODS_PRICE, AMT_CREDIT",goods credit ratio
+AGE_YEARS,application,from DAYS_BIRTH,age years
+EMPLOYED_YEARS,application,from DAYS_EMPLOYED,employed years
+EMPLOYED_TO_AGE,application,"from DAYS_EMPLOYED, DAYS_BIRTH",employed to age
+INCOME_PER_PERSON,application,"from AMT_INCOME_TOTAL, CNT_FAM_MEMBERS",income per person
+EXT_SOURCE_MEAN,application,"from EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3",ext source mean
+EXT_SOURCE_MIN,application,"from EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3",ext source min
+EXT_SOURCE_MAX,application,"from EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3",ext source max
+EXT_SOURCE_STD,application,"from EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3",ext source std
+ID_PUBLISH_YEARS,application,from DAYS_ID_PUBLISH,id publish years
+REGISTRATION_YEARS,application,from DAYS_REGISTRATION,registration years
+DOC_COUNT,application,raw column,doc count
+BUR_COUNT,bureau,aggregate by SK_ID_CURR,bur count
+BUR_ACTIVE_COUNT,bureau,aggregate by SK_ID_CURR,bur active count
+BUR_CLOSED_COUNT,bureau,aggregate by SK_ID_CURR,bur closed count
+BUR_OVERDUE_SUM,bureau,aggregate by SK_ID_CURR,bur overdue sum
+BUR_MAX_DPD_FLAG,bureau,aggregate by SK_ID_CURR,bur max dpd flag
+BUR_DAYS_CREDIT_MIN,bureau,aggregate by SK_ID_CURR,bur days credit min
+BUR_DAYS_CREDIT_MEAN,bureau,aggregate by SK_ID_CURR,bur days credit mean
+BUR_CREDIT_TYPE_NUNIQUE,bureau,aggregate by SK_ID_CURR,bur credit type nunique
+BUR_DEBT_CREDIT_RATIO,bureau,aggregate by SK_ID_CURR,bur debt credit ratio
+PREV_COUNT,previous,aggregate by SK_ID_CURR,prev count
+PREV_APPROVED_RATE,previous,aggregate by SK_ID_CURR,prev approved rate
+PREV_REFUSED_COUNT,previous,aggregate by SK_ID_CURR,prev refused count
+PREV_APP_CREDIT_RATIO_MEAN,previous,aggregate by SK_ID_CURR,prev app credit ratio mean
+INST_LATE_PAYMENT_RATE,instalments,aggregate by SK_ID_CURR,inst late payment rate
+INST_DPD_MEAN,instalments,aggregate by SK_ID_CURR,inst dpd mean
+INST_DPD_MAX,instalments,aggregate by SK_ID_CURR,inst dpd max
+INST_UNDERPAY_RATE,instalments,aggregate by SK_ID_CURR,inst underpay rate
+INST_PAYMENT_RATIO_MEAN,instalments,aggregate by SK_ID_CURR,inst payment ratio mean
+HAS_BUREAU,bureau,aggregate by SK_ID_CURR,has bureau
+HAS_PREV,previous,aggregate by SK_ID_CURR,has prev

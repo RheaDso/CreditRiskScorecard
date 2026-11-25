@@ -1,0 +1,25 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: pip install -r requirements.lock && pip install --no-deps -e .
+      - run: ruff check src tests
+      - run: mypy src
+      - run: pytest --cov=scorecard --cov-report=term --cov-fail-under=80
+      - run: python -m scorecard.pipeline --smoke
+      - run: cp -r build/smoke/artifacts artifacts
+      - run: docker build -t scorecard .
+      - name: Container answers /health
+        run: |
+          docker run -d -p 8000:8000 --name api scorecard
+          curl --retry 15 --retry-delay 2 --retry-all-errors --fail http://localhost:8000/health
