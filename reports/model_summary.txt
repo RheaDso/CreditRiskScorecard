@@ -3,8 +3,8 @@
 Dep. Variable:                 TARGET   No. Observations:                60000
 Model:                          Logit   Df Residuals:                    59987
 Method:                           MLE   Df Model:                           12
-Date:                Wed, 25 Nov 2026   Pseudo R-squ.:                  0.1446
-Time:                        23:51:54   Log-Likelihood:                -14102.
+Date:                Thu, 26 Nov 2026   Pseudo R-squ.:                  0.1446
+Time:                        00:02:14   Log-Likelihood:                -14102.
 converged:                       True   LL-Null:                       -16486.
 Covariance Type:            nonrobust   LLR p-value:                     0.000
 ===========================================================================================
